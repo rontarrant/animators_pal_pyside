@@ -1,0 +1,29 @@
+Notes
+2024-09-03 - started phase one
+- refactored ap_screen_resolutions.py
+- renamed file to: ap_display_data.py
+- introduced the DisplayData class
+- wrote methods for simplifying access to data
+- wrote tests
+- included contents of ap_projections.py in DisplayData class
+- renamed projections{} to ratio_terms{}
+- wrote data access methods for ratio_terms
+- List of definite singleton classes:
+	- APImageCollection *
+	- APSettings *
+	- APVideoFlags * (may not survive refactoring in PySide6)
+	- VideoCanvas * show_frame()
+	- FileTreeview * build_new_image_list()
+- List of possible singletons:
+	- ThumbnailCanvas
+	- VideoControlsFrame
+	- DirectionRadioSet
+	- FPSRadioSet
+	- ImageSizeSet
+	- LetterDisplacementSet
+	- VideoSettingsFrame
+	- PillarDisplacementSet
+	- ProjectionSet
+	- ResolutionSet
+	- ShootOnSet
+	- VideoImageInfoSet

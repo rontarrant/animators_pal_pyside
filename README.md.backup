@@ -1,0 +1,28 @@
+# animators_pal_pyside
+A rewrite of the Animator's Pal animation tool using the *PySide6* GUI library. This came about because *Tkinter* simply isn't fast enough to do 30 fps page-flipping... which shouldn't have taken a year to work out, but it did.
+
+Prototyping and the first proof took far longer than I'd planned (or liked, for that matter) but when I was faced with a ground-up rewrite using yet another GUI toolkit (the fourth one for this project) and a new video handling library, I decided to enslave a chat-bot to do the coding.
+
+So, I wrote up a comprehensive product requirements doc (see: Application Requirements and Design in the docs directory) and fed it to the AI bots one at a time.
+
+I had the best results with Perplexity, not just because it didn't cut me off after 10 questions, but because it went a step further and made interesting (and, as it turned out, helpful) suggestions.
+
+Over the course of six days I coached Perplexity through several versions of a monolithic file, then further coached it through breaking that up into easier-to-maintain modules, and finally ended up with a product that was close enough to spec that I declared it done.
+
+There were hiccups along the way, but also some interesting interactions. As far as hiccups go, Tuesday September 17, 2024 was a full moon. Now, from a logical point of view, that shouldn't matter to an AI, but they were *all* going nuts that day. And for the entire day. Seriously. I kept checking back and they were all giving nonsense answers.
+
+So much for science v. whatever.
+
+On the interesting side, at one point I handed Perplexity a list of image files I wanted to use for buttons. (I never use standard buttons because my education is in art and I like colourful UIs. Anyway...) In the requirements doc, I'd listed seven video control buttons I wanted for the on-screen video player, but there were 18 file names on the list of image files. Perplexity made an assumption and wrote the logic for nine buttons ('up' and 'down' images for 9 buttons equals 18 image files).
+
+There were a few setbacks, too. If I didn't word my instructions very carefully, Perplexity would add in a feature I'd asked for, but remove another one that I'd not mentioned at all. And it wasn't like these features were mutually exclusive. Perplexity just took it upon itself to yank them for (I can only assume) was some reason that made sense to Perplexity itself.
+
+But, with further coaching, all the features I'd planned ended up in the application.
+
+I just finished initial testing and it looks pretty solid. I'm impressed with Perplexity and I'll probably use it for my next project, too. I mean, why bother writing my own code if I can do the design and requirements and then hand off the coding to a bot?
+
+AI may not change the world overnight, but the writing is on the wall for coders. Programmers, no, but I can see coders being laid off in droves within the next few years. Sorry to be the bearer of that bit of news, but maybe Guaranteed Basic Income will pass parliament and you guys can get trained for other work.
+
+Good luck!
+
+ 

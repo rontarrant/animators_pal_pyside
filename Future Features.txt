@@ -1,0 +1,5 @@
+Features I may Implement
+- a New button
+- camera control (shoot frames directly into the app)
+- image cropping
+- layers
